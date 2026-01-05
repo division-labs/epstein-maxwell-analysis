@@ -1,13 +1,12 @@
 ---
-title: "Epstein-Maxwell Files"
-subtitle: "A Computational Analysis of Document Corpus, Entity Networks, and Evidentiary Patterns"
-date: "December 2025"
-abstract: |
+TITLE: "Epstein-Maxwell Files"
+SUBTITLE: "A Computational Analysis of Document Corpus, Entity Networks, and Evidentiary Patterns"
+DATE: "December 2025"
+ABSTRACT: |
   This report provides a comprehensive computational analysis of the Epstein-Maxwell Files document corpus, offering essential contextual infrastructure for researchers, journalists, and legal professionals examining individual documents connected to the case. The corpus comprises 15,116 legal documents spanning 1990–2025, from which 45,509 entity mentions representing 19,583 unique individuals have been extracted and canonicalized. Through network analysis of 19,154 documented co-occurrence relationships among 2,004 key entities, this work establishes the relational context necessary to situate any single document within the broader evidentiary landscape. The analysis employs established methodologies from computational social science, legal informatics, and criminal network analysis, with all claims directly supported by primary EFTA document citations. By mapping temporal patterns, geographic distributions, and entity prominence across the corpus, this report enables informed interpretation of individual documents that might otherwise appear disconnected or ambiguous when examined in isolation. The complete methodology, including named entity recognition procedures, canonicalization algorithms, and network construction techniques, is documented to ensure reproducibility.
 
   **License:** This work is released under the MIT License. Permission is hereby granted, free of charge, to any person obtaining a copy of this document and associated data files, to deal in the materials without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies, subject to the condition that the above copyright notice and this permission notice shall be included in all copies or substantial portions of the work.
 ---
-
 ## Executive Summary
 
 This report presents a detailed computational analysis of the Epstein-Maxwell Files dataset, which comprises legal documents, court filings, depositions, and related materials from investigations and litigation involving Jeffrey Epstein and Ghislaine Maxwell. The analysis addresses document corpus characteristics, entity extraction results, relationship networks, and temporal patterns, with all claims supported by direct EFTA document citations and referenced secondary sources.
@@ -269,14 +268,14 @@ The scale of the documentary record reflects the breadth of the investigation. A
 
 #### 3.1.3 Document Distribution by Type
 
-| File Type                                                             |  Count | Percentage |
-| --------------------------------------------------------------------- | -----: | ---------- |
-| `application/pdf`                                                   | 14,680 | 97.1%      |
-| `video/mp4`                                                         |    419 | 2.8%       |
-| `application/vnd.openxmlformats`                                    |     10 | 0.1%       |
-| `text/csv`                                                          |      4 | <0.1%      |
-| `application/vnd.ms-excel`                                          |      2 | <0.1%      |
-| `audio/mpeg`                                                        |      1 | <0.1%      |
+| File Type                          |  Count | Percentage |
+| ---------------------------------- | -----: | ---------- |
+| `application/pdf`                | 14,680 | 97.1%      |
+| `video/mp4`                      |    419 | 2.8%       |
+| `application/vnd.openxmlformats` |     10 | 0.1%       |
+| `text/csv`                       |      4 | <0.1%      |
+| `application/vnd.ms-excel`       |      2 | <0.1%      |
+| `audio/mpeg`                     |      1 | <0.1%      |
 
 #### 3.1.4 Document Distribution by Volume
 
