@@ -11,7 +11,7 @@ ABSTRACT: |
 
 This report presents a detailed computational analysis of the Epstein-Maxwell Files dataset, which comprises legal documents, court filings, depositions, and related materials from investigations and litigation involving Jeffrey Epstein and Ghislaine Maxwell. The analysis addresses document corpus characteristics, entity extraction results, relationship networks, and temporal patterns, with all claims supported by direct EFTA document citations and referenced secondary sources.
 
-The findings are based on the Epstein Files Tracking Archive (EFTA) corpus, which includes primary source documents such as police reports [EFTA00003150](VOL00001/IMAGES/0004/EFTA00003150.pdf), grand jury transcripts [EFTA00008631](VOL00008/IMAGES/0001/EFTA00008631.pdf), federal indictments [EFTA00010990](VOL00008/IMAGES/0001/EFTA00010990.pdf), and trial testimony [EFTA00009865](VOL00008/IMAGES/0001/EFTA00009865.pdf). The methodology and analytical framework draw on established literature in computational social science (Wasserman & Faust, 1994; Newman, 2010), legal informatics (Ashley, 2017), and network analysis of criminal organizations (Morselli, 2009; Bright et al., 2015).
+The findings are based on the Epstein Files Transparency Act (EFTA) corpus, which includes primary source documents such as police reports [EFTA00003150](VOL00001/IMAGES/0004/EFTA00003150.pdf), grand jury transcripts [EFTA00008631](VOL00008/IMAGES/0001/EFTA00008631.pdf), federal indictments [EFTA00010990](VOL00008/IMAGES/0001/EFTA00010990.pdf), and trial testimony [EFTA00009865](VOL00008/IMAGES/0001/EFTA00009865.pdf). The methodology and analytical framework draw on established literature in computational social science (Wasserman & Faust, 1994; Newman, 2010), legal informatics (Ashley, 2017), and network analysis of criminal organizations (Morselli, 2009; Bright et al., 2015).
 
 ---
 
@@ -233,7 +233,7 @@ The corpus includes materials from the original Palm Beach investigation [EFTA00
 
 #### 3.1.1 EFTA Document Examples
 
-The EFTA (Epstein Files Tracking Archive) collection contains thousands of documents with extracted entity mentions. The following examples demonstrate the breadth and interconnectedness of the documentary evidence:
+The EFTA (Epstein Files Transparency Act) collection contains thousands of documents with extracted entity mentions. The following examples demonstrate the breadth and interconnectedness of the documentary evidence:
 
 **Multi-Entity Documents (4 Key Entities):**
 
