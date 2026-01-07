@@ -159,7 +159,7 @@ Jean-Luc Brunel, a French modeling agent and longtime associate of Jeffrey Epste
 
 #### Virginia Giuffre (2025)
 
-Virginia Giuffre, one of the most prominent and vocal survivors of Jeffrey Epstein's sex trafficking operation, died at age 41 at her farm in Western Australia (Sam Roberts, "Virginia Giuffre, Voice in Epstein Sex-Trafficking Scandal, Dies at 41," *New York Times*, April 25, 2025; PDF archived in supplemental/ directory). According to a statement by her family, Giuffre died by suicide.
+Virginia Giuffre, one of the most prominent and vocal survivors of Jeffrey Epstein's sex trafficking operation, died at age 41 at her farm in Western Australia (Sam Roberts, "Virginia Giuffre, Voice in Epstein Sex-Trafficking Scandal, Dies at 41," *New York Times*, April 25, 2025; PDF archived in supplemental directory). According to a statement by her family, Giuffre died by suicide.
 
 **Official Finding:** Confirmed suicide, 2025. Her family released a statement confirming that Giuffre took her own life.
 
