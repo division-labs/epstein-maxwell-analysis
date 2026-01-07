@@ -84,7 +84,6 @@ Epstein-Maxwell Files/
 │   ├── build_verb_tdm_postgres.py  # Verb term-document matrix
 │   ├── create_views.py             # Analytical database views
 │   ├── reset_tables.py             # Table management utility
-│   ├── generate_statistics_report.py    # Report generation
 │   └── network-viz/           # Interactive visualization server
 │       ├── server.js          # Express.js API server
 │       ├── package.json       # Node.js dependencies
@@ -417,21 +416,6 @@ python3 scripts/reset_tables.py --tables spelling_issues entity_aliases
 # Drop and recreate tables
 python3 scripts/reset_tables.py --feature entity_disambiguation --drop --confirm
 ```
-
----
-
-#### generate_statistics_report.py
-
-Generate comprehensive statistical analysis report in Markdown format.
-
-```bash
-python3 scripts/generate_statistics_report.py [options]
-```
-
-| Argument | Type | Default | Description |
-|----------|------|---------|-------------|
-| `--dsn` | string | from `.env` | PostgreSQL connection string |
-| `-o, --output` | string | `STATISTICAL_ANALYSIS_REPORT.md` | Output markdown file path |
 
 ---
 
@@ -870,7 +854,6 @@ See [DATABASE_DOCUMENTATION.md](DATABASE_DOCUMENTATION.md) for complete schema r
 ## Documentation
 
 - **[DATABASE_DOCUMENTATION.md](DATABASE_DOCUMENTATION.md)** - Complete database schema, utilities, and maintenance
-- **[API.md](API.md)** - Quick Start and API information
 - **[DATA_QUALITY_CORRECTIONS.md](DATA_QUALITY_CORRECTIONS.md)** - Entity correction rules and filters
 
 ---
