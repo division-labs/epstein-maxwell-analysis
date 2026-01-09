@@ -167,7 +167,7 @@ Virginia Giuffre, one of the most prominent and vocal survivors of Jeffrey Epste
 
 ### 2.3 Public Figures Mentioned: Bill Clinton and Donald Trump
 
-This section identifies primary EFTA documents that mention former President Bill Clinton and former President Donald J. Trump and cites authoritative newspaper coverage that discusses those mentions. All primary links are to EFTA PDF archives in the corpus; secondary citations provide contextual reporting and dates for readers.
+This section identifies primary EFTA documents that mention presidents Bill Clinton and Donald J. Trump and cites authoritative newspaper coverage that discusses those mentions. All primary links are to EFTA PDF archives in the corpus; secondary citations provide contextual reporting and dates for readers.
 
 #### Bill Clinton
 
