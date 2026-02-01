@@ -17,6 +17,14 @@ if _env_file.exists():
                 key, value = line.split('=', 1)
                 os.environ.setdefault(key.strip(), value.strip())
 
+
+# --- Automatic .env loading ---
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # If python-dotenv is not installed, skip (env must be set manually)
+
 # Database Configuration
 # Set DATABASE_URL in .env file or environment, or override via --dsn argument
 # See .env.example for template
@@ -49,6 +57,71 @@ KNOWN_LEGAL_TERMS = {
 # NLP Configuration
 SPACY_MODEL = 'en_core_web_md'
 NLTK_TOKENIZER = 'punkt'
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Name Normalization Seed Data
+# ─────────────────────────────────────────────────────────────────────────────
+# 
+# NOTE: These are SEED values used to bootstrap the name_normalization_rules table.
+# Once the database is initialized, the table becomes the source of truth.
+# Add new rules using SQL: INSERT INTO name_normalization_rules (rule_type, pattern, ...)
+# 
+# Rule types:
+#   - 'title': Words to strip from beginning of names (mr, mrs, judge, etc.)
+#   - 'artifact_suffix': Words to strip from end of names (mailto, date, etc.)
+#   - 'ocr_pattern': Character substitutions (rn→m, 0→o, etc.)
+#
+# See: disambiguate_entities_enhanced.py load_normalization_rules()
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Seed titles (loaded into name_normalization_rules on table creation)
+SEED_TITLES = {
+    # Basic honorifics
+    'mr', 'mrs', 'ms', 'miss', 'dr', 'prof', 'professor',
+    'sir', 'lady', 'lord', 'the', 'hon', 'honorable',
+    # Legal/judicial titles
+    'judge', 'justice', 'magistrate', 'chief', 'associate',
+    # Law enforcement titles
+    'detective', 'det', 'officer', 'agent', 'special', 'assistant',
+    'sa', 'ssa', 'deputy', 'sheriff', 'marshal',
+    # Academic titles
+    'ph.d', 'phd', 'md', 'esq', 'esquire',
+    # Military ranks
+    'lt', 'cpt', 'maj', 'col', 'gen', 'sgt', 'pvt',
+    'lieutenant', 'captain', 'major', 'colonel', 'general', 'sergeant', 'private',
+    # Business titles (often in signature blocks)
+    'ceo', 'cfo', 'coo', 'president', 'vp', 'director', 'manager',
+}
+
+# Seed artifact suffixes (OCR artifacts attached to names)
+SEED_ARTIFACT_SUFFIXES = {
+    # Email header artifacts
+    'sent', 'cc', 'to', 'from', 'subject', 're', 'fwd', 'mailto',
+    # Signature block artifacts  
+    'partner', 'counsel', 'associate', 'paralegal',
+    # Document/form field artifacts
+    'date', 'document', 'defendant', 'documents', 'dob', 'exhibit',
+}
+
+# Seed OCR character confusion patterns
+SEED_OCR_PATTERNS = {
+    'rn': 'm',    # Berman → Bernan
+    'cl': 'd',    # Clinton → Dinton
+    'vv': 'w',    # Maxwell → Maxvvell
+    'nn': 'm',    # Mann → Mam
+    'li': 'h',    # light → hght
+    '1': 'l',     # 1ight → light
+    '0': 'O',     # 0bama → Obama
+    '5': 'S',     # 5mith → Smith
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Legacy aliases (for backward compatibility with existing scripts)
+# Use SEED_* versions above for new code
+# ─────────────────────────────────────────────────────────────────────────────
+TITLES = SEED_TITLES
+ARTIFACT_SUFFIXES = list(SEED_ARTIFACT_SUFFIXES)
+OCR_PATTERNS = SEED_OCR_PATTERNS
 
 # Term Canonicalization for Community Labels
 # Maps canonical display name -> list of term combinations that should be recognized
